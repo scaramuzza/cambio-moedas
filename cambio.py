@@ -39,13 +39,13 @@ if response.status_code == 200:
     # Para executar somente o 'rates' ou valores da moedas. Rates é um dicionário dentro de outro
 
     euro_real = round ( dados['rates']['BRL'] / dados['rates']['EUR'], 2)
-    print(euro_real)
+    print("%.2f" % euro_real)
 
     dollar_real = round ( dados['rates']['BRL'] / dados['rates']['USD'], 2)
-    print(dollar_real)
+    print("%.2f" % dollar_real)
 
     btc_real = round ( dados['rates']['BRL'] / dados['rates']['BTC'], 2)
-    print(btc_real)
+    print("%.2f" % btc_real)
 
     df = pd.DataFrame ({'Moedas':['Euro', 'Dollar', 'Bitcoin'], 'Valores':[euro_real,dollar_real,btc_real]})
     df.to_csv("valores.csv", index=False, sep=";") 

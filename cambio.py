@@ -20,8 +20,11 @@ if response.status_code == 200:
     print("")
     print("Base de dados acessada com sucesso")
     print("Buscando informações das moedas...")
-    dados = response.json() 
+    dados = response.json() # Desempacotar o JSON
     
+    day = dados ["date"] # Poderia ser com aspas simples também
+    print ("Acesssando dados do dia %s/%s/%s" % (day [8:], day [5:7], day [0:4]))
+
     # O resultado do site é convertido em um formato de lista JSON
     
     print("")

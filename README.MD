@@ -12,11 +12,11 @@ Um script para pegar os valores, via requisição web, das cotações das princi
 API Utilizada: [FIXER.IO] (https://fixer.io/)
 
 # Bibliotecas para funcionamento do Script
-'''sh
+```sh
 pip install requests
 pip install json
 pip install pandas
-'''
+```
 
 # Arquivo gerado
 ![Aplicação](Capturar.PNG)

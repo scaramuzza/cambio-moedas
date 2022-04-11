@@ -28,3 +28,5 @@ pip install pandas
 # Licença
 
 - Software Livre (Free Software)
+
+what about python
